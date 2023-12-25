@@ -15,16 +15,8 @@ keymap.set("n", "dw", "vb_d")
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Terminal
-keymap.set(
-  "n",
-  "<leader>tv",
-  "<cmd>ToggleTerm size=80 direction=vertical name=term<cr>",
-  { desc = "Vertical terminal" }
-)
-keymap.set(
-  "n",
-  "<leader>th",
-  "<cmd>ToggleTerm size=20 direction=horizontal name=term<cr>",
-  { desc = "Horizontal terminal" }
-)
-keymap.set("n", "<leader>tt", "<cmd>ToggleTerm direction=float name=term<cr>", { desc = "Tab terminal" })
+-- stylua: ignore
+keymap.set("n", "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical name=term<cr>", { desc = "Vertical terminal" })
+-- stylua: ignore
+keymap.set("n", "<leader>th", "<cmd>ToggleTerm size=20 direction=horizontal name=term<cr>", { desc = "Horizontal terminal" })
+keymap.set("n", "<leader>tt", "<cmd>ToggleTerm direction=float name=term<cr>", { desc = "Float terminal" })
