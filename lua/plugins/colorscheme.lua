@@ -11,7 +11,7 @@ return {
   },
   {
     "folke/tokyonight.nvim",
-    lazy = false,
+    lazy = true,
     opts = {
       style = "dark",
       terminal_colors = false,
@@ -25,7 +25,7 @@ return {
   },
   {
     "catppuccin/nvim",
-    lazy = false,
+    lazy = true,
     name = "catppuccin",
     config = function()
       require("catppuccin").setup({
