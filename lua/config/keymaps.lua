@@ -13,7 +13,6 @@ keymap.set("i", "<A-k>", "<cmd>:MoveBlock(-1)<cr>")
 
 -- Words
 keymap.set("n", "dw", "vb_d")
-keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Terminal
 -- stylua: ignore
@@ -23,14 +22,20 @@ keymap.set("n", "<leader>th", "<cmd>ToggleTerm size=20 direction=horizontal name
 keymap.set("n", "<leader>tt", "<cmd>ToggleTerm direction=float name=term<cr>", { desc = "Float terminal" })
 
 -- GO https://github.com/ray-x/go.nvim
-keymap.set("n", "<leader>cgc", "<cmd>GoCmt<cr>", { desc = "Go gen function comment" })
-keymap.set("n", "<leader>cgs", "<cmd>GoFillStruct<cr>", { desc = "Go fill struct" })
-keymap.set("n", "<leader>cga", "<cmd>GoAddTag<cr>", { desc = "Go add struct tags" })
-keymap.set("n", "<leader>cgd", "<cmd>GoRmTag<cr>", { desc = "Go remove struct tags" })
-keymap.set("n", "<leader>cgi", "<cmd>GoIfErr<cr>", { desc = "Go add if err" })
-keymap.set("n", "<leader>cgj", "<cmd>GoJson2Struct Gen<cr>", { desc = "Go gen struct from json" })
-keymap.set("n", "<leader>cgt", "<cmd>GoAddTest<cr>", { desc = "Go gen test for a function" })
-keymap.set("n", "<leader>cgr", "<cmd>GoGenReturn<cr>", { desc = "Go gen return values for a function" })
+
+wk.register({
+  G = {
+    name = "GO",
+    c = { "<cmd>GoCmt<CR>", "Gen func comment", mode = "n" },
+    s = { "<cmd>GoFillStruct<CR>", "Fill struct", mode = "n" },
+    a = { "<cmd>GoAddTag<CR>", "Add struct tags", mode = "n" },
+    d = { "<cmd>GoRmTag<CR>", "Remove struct tags", mode = "n" },
+    i = { "<cmd>GoIfErr<CR>", "Add if err block", mode = "n" },
+    j = { "<cmd>GoJson2Struct Gen<cr>", "Gen struct from json", mode = "n" },
+    t = { "<cmd>GoAddTest<cr>", "Gen func tests", mode = "n" },
+    r = { "<cmd>GoGenReturn<cr>", "Gen func return values", mode = "n" },
+  },
+}, { prefix = "<leader>" })
 
 -- ChatGPT
 wk.register({
