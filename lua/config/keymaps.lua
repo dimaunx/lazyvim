@@ -21,8 +21,13 @@ keymap.set("n", "<leader>tv", "<cmd>ToggleTerm size=100 direction=vertical name=
 keymap.set("n", "<leader>th", "<cmd>ToggleTerm size=20 direction=horizontal name=term<cr>", { desc = "Horizontal terminal" })
 keymap.set("n", "<leader>tt", "<cmd>ToggleTerm direction=float name=term<cr>", { desc = "Float terminal" })
 
--- GO https://github.com/ray-x/go.nvim
+-- Toggle highlight
+keymap.set("n", "<leader>uh", "<cmd>LocalHighlightToggle<cr>", { desc = "Toggle highlight" })
 
+-- Print env vars
+keymap.set("n", "<leader>ue", "<cmd>!printenv<cr>", { desc = "Print all env vars" })
+
+-- GO https://github.com/ray-x/go.nvim
 wk.register({
   G = {
     name = "GO",
@@ -30,10 +35,11 @@ wk.register({
     s = { "<cmd>GoFillStruct<CR>", "Fill struct", mode = "n" },
     a = { "<cmd>GoAddTag<CR>", "Add struct tags", mode = "n" },
     d = { "<cmd>GoRmTag<CR>", "Remove struct tags", mode = "n" },
-    i = { "<cmd>GoIfErr<CR>", "Add if err block", mode = "n" },
+    e = { "<cmd>GoIfErr<CR>", "Add if err block", mode = "n" },
     j = { "<cmd>GoJson2Struct Gen<cr>", "Gen struct from json", mode = "n" },
     t = { "<cmd>GoAddTest<cr>", "Gen func tests", mode = "n" },
     r = { "<cmd>GoGenReturn<cr>", "Gen func return values", mode = "n" },
+    i = { "<cmd>GoImplements<cr>", "Go Implements", mode = "n" },
   },
 }, { prefix = "<leader>" })
 
