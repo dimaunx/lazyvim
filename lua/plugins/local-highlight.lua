@@ -3,7 +3,7 @@ return {
     "tzachar/local-highlight.nvim",
     config = function()
       require("local-highlight").setup({
-        file_types = { "markdown" }, -- If this is given only attach to this
+        file_types = { "markdown", "html" }, -- If this is given only attach to this
         -- OR attach to every filetype except:
         disable_file_types = { "tex" },
         hlgroup = "Search",
