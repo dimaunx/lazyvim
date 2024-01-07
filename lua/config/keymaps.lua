@@ -5,14 +5,27 @@ local keymap = vim.keymap
 local wk = require("which-key")
 -- local opsts = { noremap = true, silent = true }
 
+-- windows
+keymap.set("n", "<leader>ww", "<C-W>p", { desc = "Other window", remap = true })
+keymap.set("n", "<leader>wd", "<C-W>c", { desc = "Delete window", remap = true })
+keymap.set("n", "<leader>w-", "<C-W>s", { desc = "Split window below", remap = true })
+keymap.set("n", "<leader>w|", "<C-W>v", { desc = "Split window right", remap = true })
+keymap.set("n", "<leader>-", "<C-W>s", { desc = "Split window below", remap = true })
+keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split window right", remap = true })
+
 -- Move line/block
 keymap.set("n", "<A-j>", "<cmd>:MoveLine(1)<cr>")
 keymap.set("n", "<A-k>", "<cmd>:MoveLine(-1)<cr>")
 keymap.set("i", "<A-j>", "<cmd>:MoveBlock(1)<cr>")
 keymap.set("i", "<A-k>", "<cmd>:MoveBlock(-1)<cr>")
 
+-- Buffers
+keymap.set("n", "<TAB>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+keymap.set("n", "<S-TAB>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
+
 -- Words
 keymap.set("n", "dw", "vb_d")
+keymap.set("x", "p", [["_dP]])
 
 -- Terminal
 -- stylua: ignore

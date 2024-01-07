@@ -10,3 +10,4 @@ opt.mouse = "a" -- Enable mouse mode
 opt.number = true -- Print line number
 opt.relativenumber = true -- Relative line numbers
 opt.spell = false
+opt.conceallevel = 0
