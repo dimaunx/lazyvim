@@ -27,13 +27,6 @@ keymap.set("n", "<S-TAB>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
 keymap.set("n", "dw", "vb_d")
 keymap.set("x", "p", [["_dP]])
 
--- Terminal
--- stylua: ignore
-keymap.set("n", "<leader>tv", "<cmd>ToggleTerm size=100 direction=vertical name=term<cr>", { desc = "Vertical terminal" })
--- stylua: ignore
-keymap.set("n", "<leader>th", "<cmd>ToggleTerm size=20 direction=horizontal name=term<cr>", { desc = "Horizontal terminal" })
-keymap.set("n", "<leader>tt", "<cmd>ToggleTerm direction=float name=term<cr>", { desc = "Float terminal" })
-
 -- Toggle highlight
 keymap.set("n", "<leader>uh", "<cmd>LocalHighlightToggle<cr>", { desc = "Toggle highlight" })
 
