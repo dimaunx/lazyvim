@@ -1,0 +1,100 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+command_timeout = 2000
+
+# A minimal left prompt
+format = """$all"""
+
+# move the rest of the prompt to the right
+right_format = """$status"""
+
+[username]
+style_user = "yellow bold"
+style_root = "red bold"
+format = "[$user]($style) in "
+disabled = false
+show_always = true
+
+[directory]
+read_only = " "
+truncation_length = 3
+# truncation_symbol = "…/"
+
+[status]
+symbol = " "
+format = '[\[$symbol$common_meaning$maybe_int\]]($style) '
+map_symbol = true
+disabled = false
+
+[terraform]
+format = "[via tf $version $workspace]($style) "
+
+[aws]
+symbol = "🌤  "
+disabled = false
+
+[gcloud]
+symbol = ""
+disabled = true
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+disabled = true
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[nim]
+symbol = ""
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = "ꦩ "
+
+[python]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
+
+[rust]
+symbol = " "
