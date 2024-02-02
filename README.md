@@ -1,6 +1,8 @@
 # Setup macOS
 
-This Neovim setup is setup powered by [lazyvim].
+This Neovim setup is powered by [lazyvim] and [tmux].
+
+![setup](./images/setup.png)
 
 ```sh
 brew install --cask font-ubuntu-mono-nerd-font
@@ -32,7 +34,7 @@ brew install starship
 cp starship.toml ~/.config/starship.toml
 ```
 
-### tmux
+### [tmux]
 
 ```sh
 brew install tmux
@@ -54,6 +56,8 @@ cp alacritty.toml ~/.config/alacritty/alacritty.toml
 <!--links-->
 
 [lazyvim]: https://www.lazyvim.org
+
+[tmux]: https://github.com/tmux/tmux/wiki
 
 [oh-my-zsh]: https://ohmyz.sh
 

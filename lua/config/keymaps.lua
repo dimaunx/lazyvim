@@ -30,6 +30,9 @@ keymap.set("x", "p", [["_dP]])
 -- Toggle highlight
 keymap.set("n", "<leader>uh", "<cmd>LocalHighlightToggle<cr>", { desc = "Toggle highlight" })
 
+-- Oil nvim
+keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
 -- Print env vars
 keymap.set("n", "<leader>ue", "<cmd>!printenv<cr>", { desc = "Print all env vars" })
 
