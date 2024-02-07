@@ -1,6 +1,7 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
+local g = vim.g
 local opt = vim.opt
 
 opt.termguicolors = true -- True color support
@@ -9,5 +10,6 @@ opt.ignorecase = true -- Ignore case
 opt.mouse = "a" -- Enable mouse mode
 opt.number = true -- Print line number
 opt.relativenumber = true -- Relative line numbers
-opt.spell = false
-opt.conceallevel = 0
+opt.spell = true -- Disable spelling
+opt.conceallevel = 0 -- Disable json conceal
+g.minimap_auto_start = 0 -- Minimap autostart

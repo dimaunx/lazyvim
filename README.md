@@ -6,7 +6,8 @@ This Neovim setup is powered by [lazyvim] and [tmux].
 
 ```sh
 brew install --cask font-ubuntu-mono-nerd-font
-brew install git neovim lazygit trash ripgrep fd gnu-sed gmp
+brew install git neovim lazygit trash ripgrep fd gnu-sed gmp rust
+cargo install --locked code-minimap
 mv ~/.config/nvim{,.bak}
 rm -rf ~/.local/share/nvim
 rm -rf ~/.local/state/nvim

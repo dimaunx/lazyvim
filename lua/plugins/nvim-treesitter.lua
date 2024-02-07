@@ -20,6 +20,7 @@ return {
         "go",
         "groovy",
         "terraform",
+        "hcl",
         "make",
         "rust",
       },

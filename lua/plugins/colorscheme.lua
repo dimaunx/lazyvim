@@ -2,9 +2,10 @@ return {
   {
     "sainnhe/sonokai",
     init = function() -- init function runs before the plugin is loaded
+      vim.opt.termguicolors = true
       vim.g.sonokai_style = "andromeda"
-      vim.g.transparent_background = 0
-      vim.g.sonokai_dim_inactive_windows = 1
+      vim.g.sonokai_transparent_background = 2
+      vim.g.sonokai_dim_inactive_windows = 0
       vim.g.sonokai_better_performance = 1
       vim.g.sonokai_disable_terminal_colors = 1
       vim.g.sonokai_current_word = "bold"
@@ -33,19 +34,6 @@ return {
       })
     end,
   },
-  {
-    "catppuccin/nvim",
-    lazy = true,
-    name = "catppuccin",
-    config = function()
-      require("catppuccin").setup({
-        flavour = "macchiato",
-        transparent_background = false,
-        term_colors = false,
-      })
-    end,
-  },
-
   -- Configure LazyVim to load a theme
   {
     "LazyVim/LazyVim",
