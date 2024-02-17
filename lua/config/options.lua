@@ -10,6 +10,6 @@ opt.ignorecase = true -- Ignore case
 opt.mouse = "a" -- Enable mouse mode
 opt.number = true -- Print line number
 opt.relativenumber = true -- Relative line numbers
-opt.spell = true -- Disable spelling
+opt.spell = false -- Disable spelling
 opt.conceallevel = 0 -- Disable json conceal
 g.minimap_auto_start = 0 -- Minimap autostart
