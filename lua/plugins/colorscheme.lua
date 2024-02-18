@@ -7,7 +7,7 @@ return {
       vim.g.sonokai_transparent_background = 2
       vim.g.sonokai_dim_inactive_windows = 0
       vim.g.sonokai_better_performance = 1
-      vim.g.sonokai_disable_terminal_colors = 1
+      vim.g.sonokai_disable_terminal_colors = 0
       vim.g.sonokai_current_word = "bold"
       vim.g.sonokai_show_eob = 1
     end,
@@ -38,7 +38,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "sonokai",
     },
   },
 }
