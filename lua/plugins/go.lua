@@ -18,7 +18,7 @@ return {
         tag_transform = false, -- can be transform option("snakecase", "camelcase", etc) check gomodifytags for details and more options
         tag_options = "json=omitempty",
         lsp_inlay_hints = {
-          enable = true,
+          enable = false,
           -- hint style, set to 'eol' for end-of-line hints, 'inlay' for inline hints
           -- inlay only avalible for 0.10.x
           style = "eol",
