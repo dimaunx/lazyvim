@@ -30,7 +30,6 @@ keymap.set("n", "<leader>mm", "<cmd>MinimapToggle<cr>", { desc = "Next buffer" }
 keymap.set("n", "dw", "vb_d")
 keymap.set("x", "p", [["_dP]])
 keymap.set("x", "d", '"_dd', opts)
-keymap.set("n", "dd", '"_dd', opts)
 
 -- Toggle highlight
 keymap.set("n", "<leader>uh", "<cmd>LocalHighlightToggle<cr>", { desc = "Toggle highlight" })
