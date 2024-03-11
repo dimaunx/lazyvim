@@ -23,6 +23,7 @@ return {
         "hcl",
         "make",
         "rust",
+        "templ",
       },
     },
   },
