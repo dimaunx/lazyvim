@@ -8,15 +8,6 @@ return {
     },
     config = function()
       require("go").setup({
-        disable_defaults = false, -- true|false when true set false to all boolean settings and replace all table
-        -- settings with {}
-        go = "go", -- go command, can be go[default] or go1.18beta1
-        goimport = "gopls", -- goimport command, can be gopls[default] or either goimport or golines if need to split long lines
-        fillstruct = "gopls", -- default, can also use fillstruct
-        gofmt = "gofumpt", --gofmt cmd,
-        max_line_len = 128, -- max line length in golines format, Target maximum line length for golines
-        tag_transform = false, -- can be transform option("snakecase", "camelcase", etc) check gomodifytags for details and more options
-        tag_options = "json=omitempty",
         lsp_inlay_hints = {
           enable = false,
           -- hint style, set to 'eol' for end-of-line hints, 'inlay' for inline hints
