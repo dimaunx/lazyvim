@@ -12,4 +12,3 @@ opt.number = true -- Print line number
 opt.relativenumber = true -- Relative line numbers
 opt.spell = false -- Disable spelling
 opt.conceallevel = 0 -- Disable json conceal
-g.minimap_auto_start = 0 -- Minimap autostart

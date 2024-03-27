@@ -6,6 +6,7 @@ return {
         -- terraformls = {},
         marksman = {},
       },
+      inlay_hints = { enabled = false },
     },
   },
 }

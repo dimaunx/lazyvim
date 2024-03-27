@@ -3,7 +3,6 @@
 -- Add any additional keymaps hereby
 local keymap = vim.keymap
 local wk = require("which-key")
-local opts = { noremap = true, silent = true }
 
 -- windows
 keymap.set("n", "<leader>ww", "<C-W>p", { desc = "Other window", remap = true })
@@ -24,12 +23,10 @@ keymap.set("n", "<TAB>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 keymap.set("n", "<S-TAB>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
 
 -- Minimap
-keymap.set("n", "<leader>mm", "<cmd>MinimapToggle<cr>", { desc = "Next buffer" })
+-- keymap.set("n", "<leader>mm", "<cmd>MinimapToggle<cr>", { desc = "Next buffer" })
 
 -- Words
 keymap.set("n", "dw", "vb_d")
-keymap.set("x", "p", [["_dP]])
-keymap.set("x", "d", '"_dd', opts)
 
 -- Toggle highlight
 keymap.set("n", "<leader>uh", "<cmd>LocalHighlightToggle<cr>", { desc = "Toggle highlight" })
