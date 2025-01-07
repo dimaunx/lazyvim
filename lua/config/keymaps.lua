@@ -52,19 +52,3 @@ wk.register({
     i = { "<cmd>GoImplements<cr>", "Go Implements", mode = "n" },
   },
 }, { prefix = "<leader>" })
-
--- ChatGPT
-wk.register({
-  C = {
-    name = "ChatGPT",
-    n = { "<cmd>GpChatNew vsplit<CR>", "New Chat", mode = { "n", "v" } },
-    c = { "<cmd>'<,'>GpChatNew vsplit<CR>", "New chat paste", mode = { "n", "v" } },
-    t = { "<cmd>'<,'>GpChatToggle<CR>", "Toggle Chat", mode = { "n", "v" } },
-    a = { "<cmd>GpNextAgent<CR>", "Next Agent", mode = { "n", "v" } },
-    f = { "<cmd>GpChatFinder<CR>", "Chat Finder", mode = { "n", "v" } },
-    s = { "<cmd>GpStop<cr>", "Stop", mode = { "n", "v" } },
-    u = { "<cmd>'<,'>GpUnitTests<CR>", "Write UnitTests", mode = { "n", "v" } },
-    e = { "<cmd>'<,'>GpExplain<CR>", "Explain Code", mode = { "n", "v" } },
-    r = { "<cmd>'<,'>GpCodeReview<CR>", "Code Review", mode = { "n", "v" } },
-  },
-}, { prefix = "<leader>" })
