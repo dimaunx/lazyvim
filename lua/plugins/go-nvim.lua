@@ -10,6 +10,7 @@ return {
       lsp_inlay_hints = {
         enable = false,
       },
+      lsp_gofumpt = false,
       -- lsp_keymaps = false,
       -- other options
     },
