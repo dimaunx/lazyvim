@@ -36,19 +36,3 @@ keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Print env vars
 keymap.set("n", "<leader>ue", "<cmd>!printenv<cr>", { desc = "Print all env vars" })
-
--- GO https://github.com/ray-x/go.nvim
-wk.register({
-  G = {
-    name = "GO",
-    c = { "<cmd>GoCmt<CR>", "Gen func comment", mode = "n" },
-    s = { "<cmd>GoFillStruct<CR>", "Fill struct", mode = "n" },
-    a = { "<cmd>GoAddTag<CR>", "Add struct tags", mode = "n" },
-    d = { "<cmd>GoRmTag<CR>", "Remove struct tags", mode = "n" },
-    e = { "<cmd>GoIfErr<CR>", "Add if err block", mode = "n" },
-    j = { "<cmd>GoJson2Struct Gen<cr>", "Gen struct from json", mode = "n" },
-    t = { "<cmd>GoAddTest<cr>", "Gen func tests", mode = "n" },
-    r = { "<cmd>GoGenReturn<cr>", "Gen func return values", mode = "n" },
-    i = { "<cmd>GoImplements<cr>", "Go Implements", mode = "n" },
-  },
-}, { prefix = "<leader>" })
