@@ -13,10 +13,10 @@ keymap.set("n", "<leader>-", "<C-W>s", { desc = "Split window below", remap = tr
 keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split window right", remap = true })
 
 -- Move line/block
-keymap.set("n", "<A-j>", "<cmd>:MoveLine(1)<cr>")
-keymap.set("n", "<A-k>", "<cmd>:MoveLine(-1)<cr>")
-keymap.set("i", "<A-j>", "<cmd>:MoveBlock(1)<cr>")
-keymap.set("i", "<A-k>", "<cmd>:MoveBlock(-1)<cr>")
+keymap.set("n", "<A-j>", ":MoveLine(1)<CR>", { noremap = true, silent = true })
+keymap.set("n", "<A-k>", ":MoveLine(-1)<CR>", { noremap = true, silent = true })
+keymap.set("x", "<A-j>", ":MoveBlock(1)<CR>", { noremap = true, silent = true })
+keymap.set("x", "<A-k>", ":MoveBlock(-1)<CR>", { noremap = true, silent = true })
 
 -- Buffers
 keymap.set("n", "<TAB>", "<cmd>bnext<cr>", { desc = "Next buffer" })
@@ -36,3 +36,7 @@ keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Print env vars
 keymap.set("n", "<leader>ue", "<cmd>!printenv<cr>", { desc = "Print all env vars" })
+
+-- Window resizing with Ctrl+Arrow keys
+keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
