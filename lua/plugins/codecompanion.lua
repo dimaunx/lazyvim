@@ -7,7 +7,8 @@ return {
     "ravitemer/mcphub.nvim",
   },
   keys = {
-    { "<leader>gl", "<cmd>CodeCompanion /commit<cr>", desc = "Generate commit message" },
+    { "<leader>ga", "<cmd>CodeCompanionActions<cr>", desc = "CodeCompanion actions" },
+    { "<leader>gc", "<cmd>CodeCompanion /commit<cr>", desc = "Generate commit message" },
   },
   opts = {
     opts = {
