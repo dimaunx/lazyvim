@@ -9,6 +9,6 @@ return {
     port = 3000,
     shutdown_delay = 0,
     use_bundled_binary = false,
-    mcp_request_timeout = 900000, -- 15 minutes
+    mcp_request_timeout = 180000, -- 3 minutes
   },
 }
