@@ -6,10 +6,21 @@ return {
       vim.g.sonokai_style = "andromeda"
       vim.g.sonokai_transparent_background = 2
       vim.g.sonokai_dim_inactive_windows = 0
-      vim.g.sonokai_better_performance = 1
+      vim.g.sonokai_better_performance = 0
       vim.g.sonokai_disable_terminal_colors = 0
       vim.g.sonokai_current_word = "bold"
       vim.g.sonokai_show_eob = 1
+    end,
+    config = function()
+      -- Make terminal and floating windows transparent
+      vim.api.nvim_create_autocmd("ColorScheme", {
+        pattern = "sonokai",
+        callback = function()
+          vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+          vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE" })
+          vim.api.nvim_set_hl(0, "Terminal", { bg = "NONE" })
+        end,
+      })
     end,
   },
   {
