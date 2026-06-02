@@ -2,7 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps hereby
 local keymap = vim.keymap
-local wk = require("which-key")
 
 -- windows
 keymap.set("n", "<leader>ww", "<C-W>p", { desc = "Other window", remap = true })
