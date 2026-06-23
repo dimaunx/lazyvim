@@ -5,6 +5,10 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       require("oil").setup({
+        view_options = {
+          -- Set to true to show files and directories that start with "."
+          show_hidden = true,
+        },
         -- Set to false if you still want to use netrw.
         default_file_explorer = true,
         -- Id is automatically added at the beginning, and name at the end
